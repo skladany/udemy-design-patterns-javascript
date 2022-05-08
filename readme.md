@@ -80,6 +80,7 @@ Notes and a checklist as I go through the course.
 # Section 3: Builder
 
 - [x] 10. Gamma Categorization (Erich Gamma, one of the GoF, Gang of Four)
+
   - Creational Patterns
     - Deals with the creation (construction) of objects
     - Explicit (constructor) vs implicit (DI, reflection, etc)
@@ -90,3 +91,11 @@ Notes and a checklist as I go through the course.
     - Stress importance of good API design
   - Bahavorial Patterns
     - All different, no central theme
+
+- [x] 11. Overview
+  - Some objects are simple and only require single initializer
+  - Other objects require a lot of inializers
+  - Having an object with 10 initializer arguments is not productive
+  - Instead, build it up piecewise
+  - Builder provides an API for constructing the object step-by-step
+  - "When piecewise object construction is complicated, provide an API for doing it succinctly"
