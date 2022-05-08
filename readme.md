@@ -76,3 +76,17 @@ Notes and a checklist as I go through the course.
   - High-level modules should _not_ depending directly on low-level modules but instead depend on abtractions
 
 - [x] 9. Summary
+
+# Section 3: Builder
+
+- [x] 10. Gamma Categorization (Erich Gamma, one of the GoF, Gang of Four)
+  - Creational Patterns
+    - Deals with the creation (construction) of objects
+    - Explicit (constructor) vs implicit (DI, reflection, etc)
+    - Wholesale (single statement) vs piecewise (step-by-step)
+  - Structural Patterns
+    - Concerned with the structure (e.g, class members)
+    - Many patterns are wrappers that mimic the underlying class' interface
+    - Stress importance of good API design
+  - Bahavorial Patterns
+    - All different, no central theme
