@@ -93,9 +93,17 @@ Notes and a checklist as I go through the course.
     - All different, no central theme
 
 - [x] 11. Overview
+
   - Some objects are simple and only require single initializer
   - Other objects require a lot of inializers
   - Having an object with 10 initializer arguments is not productive
   - Instead, build it up piecewise
   - Builder provides an API for constructing the object step-by-step
   - "When piecewise object construction is complicated, provide an API for doing it succinctly"
+
+  - [x] 12. Builder
+
+    - Something that helps you build an object
+
+  - [ ] 13. Builder Facets
+    - Sometimes one builder isn't enough
