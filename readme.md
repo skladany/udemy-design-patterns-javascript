@@ -105,5 +105,41 @@ Notes and a checklist as I go through the course.
 
     - Something that helps you build an object
 
-  - [ ] 13. Builder Facets
+  - [x] 13. Builder Facets
+
     - Sometimes one builder isn't enough
+
+  - [x] Coding Exercise 1: Builder Coding Exercise
+  - [x] 14. Summary
+    - Builder is a separate component for building an object
+    - Can either give builder an initializer or return it via a static function
+    - Can be chained by returning `this`
+    - Difference facets of an object can be built with different builders working in tandem via a base class
+
+# Section 4: Factory (Factory Method & Abstract Factory)
+
+- [x] 15. Overview
+
+  - Factory Method
+    - Object creation logic becomes to complicated
+    - Initialize is not descriptive
+      - Name is always `__init__` (is that true in JS?)
+      - Cannot overload with same set of arguments with different names
+      - Can turn into `optional paramater hell`
+    - Wholesale object creation (non-pieceise, unlike Builder) can be outsourced to
+      - A seperate method (Factory Method)
+      - That may exist in a separate class (Factory)
+      - Can create hierarchy of factories with Abstract Factory
+  - Factory
+    - A component responsible solely for the wholesale (not piecewise) creation of objects
+
+- [x] 16. Factory Method
+
+  - A method for creating something (often static)
+
+- [x] 17. Factory
+
+  - Seperation of concerns
+  - Just a seperate class that takes on the responsibility of creating objects of a particular type
+
+- [x] 18. Abstract Factory
