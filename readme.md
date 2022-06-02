@@ -143,3 +143,67 @@ Notes and a checklist as I go through the course.
   - Just a seperate class that takes on the responsibility of creating objects of a particular type
 
 - [x] 18. Abstract Factory
+- [x] Coding Exercise 2: Factory Coding Exercise
+- [x] 19. Summary
+
+  - A _factory method_ is a static method that creats objects
+  - A factory is any entity (not necessarily a class) that can take care of object creation
+  - A factory can be external or reside inside the object as an inner class
+  - Hierachries of factories can be used to create related objects
+
+# Section 5: Prototype
+
+- Complicated objects aren't designed from scratch
+  - You iterate on existing design (e.g, a car)
+- An existing (partially or fully constructed) design is a Prototype
+- We make a copy (clone) the prototype and customize it (requires a deep copy)
+- We make the cloning convenient (e.g, via a Factory)
+
+- Prototype: A partially or fully initialized object that you copy (clone) and make use of.
+
+- [x] 21. Explicit Copying
+- [x] 22. Copy Through Serialization
+- [x] 23. Prototype Factory
+
+  - Merge of prototype & factory
+  - Allows you to avoid having to explicity use the serializer and prototype
+
+- [x] Coding Exercise 3: Prototype Coding Exercise
+- [x] 24. Summary
+  - To implement a prototype, partially construct an object and store it somewhere
+  - Deep copy the prototype
+  - Customize the resulting instance
+  - A factory provides a convenient API for using prototypes
+
+# Section 6: Singleton
+
+- [x] 25. Overview
+
+  - People love to hate it...
+  - A component which is instantiated only once
+  - For some components, only makes sense to have one in the system at a time
+    - Example: Database repo
+    - Object factory
+  - Constructor call is expensive
+    - We want the init to only happen once
+    - Subsequent calls simply return the same instance
+  - Also want to prevent creation of additional copies
+
+- [x] 26. Singleton implementation
+  - Checks constructor to make sure it's only instantiated once
+- [x] 27. Monostate
+  - Doesn't try to do any constructor magic
+  - Uses getters & setters to store values at the class level "above" the instance
+  - So then data is shared between instancesgit
+- [x] 28. Singleton Problems
+  - If a singleton relies on production data, it becomes
+    hard to write unit tests
+  - Instead write singleton's such that data can be swapped out with dummy data for testing
+- [x] 29. Singleton coding problems
+
+# Section 7: Adapter
+
+- [x] 30. Overview
+  - A construct which adapts an existing interface X to conform to the required interface Y
+- [x] 31. Adapter
+- [ ] 32. Adapter Caching
